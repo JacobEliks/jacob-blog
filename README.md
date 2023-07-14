@@ -1,5 +1,5 @@
 ## My Blog Website
-This is a responsive blog website built with Flask and Bootstrap.
+This is a responsive blog website built with Flask and Bootstrap. Website available at https://jacob-blog-480513938cd6.herokuapp.com
 
 # Features
 
