@@ -3,12 +3,12 @@ This is a responsive blog website built with Flask and Bootstrap.
 
 # Features
 
-User Registration: Users can create an account to access additional features.
-User Authentication: Secure user authentication with hashed and salted passwords.
-View Blog Posts: Users can read blog posts on various topics.
-Leave Comments: Users can leave comments on blog posts to engage with the content.
-Contact Form: Users can send messages to the website owner via a contact form.
-Responsive Design: The website is designed to be mobile-friendly and responsive across different devices.
+- User Registration: Users can create an account to access additional features.
+- User Authentication: Secure user authentication with hashed and salted passwords.
+- View Blog Posts: Users can read blog posts on various topics.
+- Leave Comments: Users can leave comments on blog posts to engage with the content.
+- Contact Form: Users can send messages to the website owner via a contact form.
+- Responsive Design: The website is designed to be mobile-friendly and responsive across different devices.
 
 # Installation
 
@@ -27,7 +27,7 @@ Responsive Design: The website is designed to be mobile-friendly and responsive 
 ```
 4. Install the required dependencies:
 ```bash
-pip install -r requirements.txt
+  pip install -r requirements.txt
 ```
 5. Configure the Database:
 Create a SQL database and update the database configuration in the config.py file.
