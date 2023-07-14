@@ -34,7 +34,7 @@ Create a SQL database and update the database configuration in the config.py fil
 Make sure to set the appropriate values for the database URL, username, password, etc.
 6. Run the application:
 ```bash
-  python app.py
+  python main.py
 ```
 7. Access the website:
 Open your web browser and navigate to http://localhost:5000 to access the blog website.
