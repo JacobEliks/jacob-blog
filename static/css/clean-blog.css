@@ -444,7 +444,7 @@ form .form-group:first-child .floating-label-form-group {
 }
 
 footer {
-  background-color: black;
+  padding: 50px 0 65px;
 }
 
 footer .list-inline {
