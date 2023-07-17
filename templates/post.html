@@ -41,6 +41,7 @@
 
                 {{ ckeditor.load() }}
                 {{ ckeditor.config(name='comment_text') }}
+                {{ form.csrf_token }}
                 {{ wtf.quick_form(form, novalidate=True, button_map={"submit": "primary"}) }}
 
 
