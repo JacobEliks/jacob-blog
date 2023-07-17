@@ -9,6 +9,7 @@ from sqlalchemy.orm import relationship
 from flask_login import UserMixin, login_user, LoginManager, login_required, current_user, logout_user
 from forms import LoginForm, RegisterForm, CreatePostForm, CommentForm
 from flask_gravatar import Gravatar
+from flask_migrate import Migrate
 
 app = Flask(__name__)
 app.app_context().push()
@@ -23,6 +24,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = "postgres://cidzbjeceapwai:3576e58f6de1f
                                         "compute-1.amazonaws.com:5432/ddf6s5ushgnh5u"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
+migrate = Migrate(app, db)
 login_manager = LoginManager()
 login_manager.init_app(app)
 
