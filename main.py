@@ -12,16 +12,15 @@ from flask_gravatar import Gravatar
 
 app = Flask(__name__)
 app.app_context().push()
-app.config['SQLALCHEMY_DATABASE_URI'] = "postgres://cidzbjeceapwai:3576e58f6de1fd0c0d91e9e34155101f11125e68eba363de" \
-                                        "59731f951a61cef1@ec2-35-169-11-108." \
-                                        "compute-1.amazonaws.com:5432/ddf6s5ushgnh5u"
 app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
 ckeditor = CKEditor(app)
 Bootstrap(app)
 gravatar = Gravatar(app, size=100, rating='g', default='retro', force_default=False, force_lower=False, use_ssl=False, base_url=None)
 
 ##CONNECT TO DB
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///blog.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgres://cidzbjeceapwai:3576e58f6de1fd0c0d91e9e34155101f11125e68eba363de" \
+                                        "59731f951a61cef1@ec2-35-169-11-108." \
+                                        "compute-1.amazonaws.com:5432/ddf6s5ushgnh5u"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 login_manager = LoginManager()
